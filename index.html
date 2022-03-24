@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ford</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="d-flex header-content">
+
+      <div class="header-left">
+        <a href="#" class="pr-2 header-item mr-2">
+          <span class="header-icon">
+            <img src="./img/logo.jpg" alt="Hình ảnh" style="width: 50px; height: 30px;">
+          </span>
+          <span>Bronco</span>
+        </a>
+        <a href="#" class="header-text">
+          FORD USED
+        </a>
+      </div>
+      <div class="header-right">
+        <a href="#">
+          <i class="fa fa-map-marker-alt"></i>
+          <span>Dealership Locations</span>
+        </a>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="./img/Ford-Logo.png" class="img-fluid">
+      </a>
+      <button class="navbar-toggler collaspe opened" type="button" data-toggle="collapse" data-target="#navbarFord"
+        aria-controls="navbarFord" aria-expanded="false" aria-label="Toggle navigation">
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+          <div class="spinner diagonal part-1"></div>
+          <div class="spinner horizontal"></div>
+          <div class="spinner diagonal part-2"></div>
+          <div class="ford-text">
+            <p style="font-size: 14px;">Menu</p>
+          </div>
+        </label>
+
+
+      </button>
+
+      <div class="collapse navbar-collapse nav-content" id="navbarFord">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">SUVS & CROSSOVERS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">TRUCKS AND VANS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ELECTRIFIED</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CARS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ALL VEHICLES</a>
+          </li>
+        </ul>
+      </div>
+      <div class="collapse navbar-collapse ford-content" id="navbarFord">
+        <ul class="navbar-nav mr-auto d-lg-none d-xl-none d-block">
+          <li class="nav-item dropdown header-title">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" onclick=hienThiThongTin()>
+              <span id="vehicle">VEHICLES</span>
+              <span class=" ford-icon float-right"><i class="fa fa-angle-down" id="nav-icon"></i></span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">SUVS & CROSSOVERS</a>
+
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">TRUCKS AND VANS</a>
+
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">ELECTRIFIED</a>
+
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">CARS</a>
+
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">ALL VEHICLES</a>
+
+            </div>
+          </li>
+
+        </ul>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarFord">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item header-title">
+            <a class="nav-link" href="#"><i class="fa fa-user pr-2"></i>MY ACCOUNT</a>
+          </li>
+          <li class="nav-item header-title">
+            <a class="nav-link" href="#">FINANCE</a>
+          </li>
+          <li class="nav-item header-title">
+            <a class="nav-link" href="#">SUPPORT</a>
+          </li>
+          <li class="nav-item d-lg-none d-xl-none d-block header-title">
+            <a class="nav-link " href="#" id="nav-special">
+              <i class="fa fa-map-marker-alt"></i>
+              <span>Dealership Locations</span>
+            </a>
+          </li>
+          <li class="nav-item d-lg-none d-xl-none d-block header-title">
+            <a class="nav-link " href="#" id="nav-special">
+              <span>EN</span>
+            </a>
+          </li>
+          <li class="nav-item d-lg-none d-xl-none d-block ford-icon">
+            <a class="nav-link text-center d-flex" href="#" id="nav-img">
+              <span>
+                <img src="./img/logo.jpg" alt="Hình ảnh" style="width: 50px; height: 30px;">
+                <p>Bronco</p>
+              </span>
+              <span class="ml-2">FORD USED</span>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </nav>
+  </header>
+  <!-- Carousel -->
+  <section class="carousel">
+    <div id="carouselFord" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselFord" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselFord" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/cq5dam.web.2160.2160 (1).jpg" class="d-block w-100" alt="Hình ảnh">
+          <div class="carousel-caption d-none d-md-block">
+            <button class="btn btn-learn">Learn more</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/cq5dam.web.2160.2160.jpg" class="d-block w-100" alt="Hình ảnh">
+          <div class="carousel-caption d-none d-md-block ">
+            <div class="carousel-content">
+              <h5>Unleash The Raptor</h5>
+              <button class="btn btn-raptor">Explore F-150 Raptor</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselFord" role="button" data-slide="prev">
+        <span class="carousel-prev-icon"><i class="fa fa-angle-left"></i></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselFord" role="button" data-slide="next">
+        <span class="carousel-next-icon"><i class="fa fa-angle-right"></i></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+  <!-- Pick up -->
+  <section class="pickup">
+    <h5>Pick Up Where You Left Off</h5>
+    <div class="container d-lg-flex d-xl-flex d-md-flex d-none">
+
+      <div class="product-left">
+        <img src="./img/ford.png" alt="Hình ảnh">
+        <div class="product-content text-center">
+          <p class="pickup-product">2021 F-150 ></p>
+          <p class="price">Starting at $28,940 <sup>1</sup></p>
+          <button class="btn btn-overview">Overview</button>
+          <p class="product-view">View all Offers ></p>
+        </div>
+
+      </div>
+      <div class="product-right">
+        <img src="./img/vehicle.png" alt="Hình ảnh">
+        <div class="product-content text-center">
+          <p class="pickup-product">2021 Bronco ></p>
+          <p class="price">Starting at $28,500<sup>1</sup></p>
+          <button class="btn btn-overview">Overview</button>
+          <p class="product-view">Get Updates ></p>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="container d-md-none d-block carousel slide" id="pickupFord" data-ride="carousel">
+
+      <div class="carousel-inner">
+        <div class="product-left carousel-item active">
+          <img src="./img/ford.png" alt="Hình ảnh">
+          <div class="product-content text-center pb-3">
+            <p class="pickup-product">2021 F-150 ></p>
+            <p class="price">Starting at $28,940 <sup>1</sup></p>
+            <button class="btn btn-overview">Overview</button>
+            <p class="product-view">View all Offers ></p>
+          </div>
+
+        </div>
+        <div class="product-right carousel-item">
+          <img src="./img/vehicle.png" alt="Hình ảnh">
+          <div class="product-content text-center pb-3">
+            <p class="pickup-product">2021 Bronco ></p>
+            <p class="price">Starting at $28,500<sup>1</sup></p>
+            <button class="btn btn-overview">Overview</button>
+            <p class="product-view">Get Updates ></p>
+          </div>
+
+        </div>
+      </div>
+      <ol class="carousel-indicators">
+        <li data-target="#pickupFord" data-slide-to="0" class="active"></li>
+        <li data-target="#pickupFord" data-slide-to="1"></li>
+      </ol>
+    </div>
+  </section>
+  <!-- Vehicle -->
+  <section class="vehicle">
+    <div class="vehicle-content text-center">
+      <h5>Something for Everyone</h5>
+      <p>See our full lineup of vehicles and find the one that best fits you.</p>
+      <button class="btn btn-vehicle">All Vehicles</button>
+    </div>
+    <div class="vehicle-img">
+      <img src="./img/cq5dam.web.2160.2160.png" alt="Hình ảnh" class="img-fluid">
+    </div>
+  </section>
+  <!-- Offer -->
+  <section class="offer">
+    <div class="offer-container">
+      <img src="./img/cq5dam.web.2160.2160 (2).jpg" alt="Hình ảnh" class="img-fluid">
+      <div class="offer-content">
+        <h5>Let Us Sweeten the Deal</h5>
+      </div>
+
+      <div class="offer-item">
+        <p>SEE ALL OFFERS <span class="ml-2"><i class="fa fa-angle-right"></i></span></p>
+      </div>
+
+    </div>
+  </section>
+  <!-- News -->
+  <section class="new">
+    <div class="container-fluid d-lg-block d-xl-block d-md-block d-none">
+      <div class="row new-top">
+        <div class="col-9 new-top-right">
+          <h5>What's Happening at Ford</h5>
+          <p>The latest technology, news and vehicles.</p>
+        </div>
+        <div class="col-3 new-top-left">
+          <div class="new-item">
+            <img src="./img/cq5dam.web.768.768.jpg" class="img-fluid">
+            <div class="new-content d-flex container-fluid">
+              <p>Learn more about Ford Fund </p>
+              <p class="new-icon ml-2"><i class="fa fa-angle-right"></i></p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="row new-center">
+        <div class="col-6 new-item-left">
+          <div class="new-item">
+            <img src="./img/hinh1.png" class="img-fluid">
+            <div class="new-content d-flex new-ford container-fluid">
+              <p>The All-New 2021 F-150 Raptor </p>
+              <p class=" new-icon ml-2"><i class="fa fa-angle-right"></i></p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-6 new-item-right">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 product-top-left">
+                <div class="new-item">
+                  <img src="./img/Hình2.png" class="img-fluid">
+                  <div class="new-content d-flex container-fluid">
+                    <p>Which Fuel Choice is Right For you? </p>
+                    <p class="new-icon ml-2"><i class="fa fa-angle-right"></i></p>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class=" col-6 product-top-right">
+                <div class="new-item">
+                  <img src="./img/Hình3.png" class="img-fluid">
+                  <div class="new-content d-flex container-fluid">
+                    <p>Fordpass <sup>TM</sup> Rewards Visa Card</p>
+                    <p class="new-icon ml-2"><i class="fa fa-angle-right"></i></p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-6 product-bottom-left">
+                <div class="new-item">
+                  <img src="./img/Hình4.png" class="img-fluid">
+                  <div class="new-content d-flex container-fluid">
+                    <p>Learn more</p>
+                    <p class="new-icon ml-2"><i class="fa fa-angle-right"></i></p>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-6 product-bottom-right">
+                <div class="new-item">
+                  <img src="./img/Hình5.png" class="img-fluid">
+                  <div class="new-content d-flex container-fluid">
+                    <p>Covid 19 Assistant</p>
+                    <p class="new-icon ml-2"><i class="fa fa-angle-right"></i></p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="new-2 conatiner-fluid my-4 d-lg-none d-xl-none d-md-none d-block">
+      <h5>What's Happening at Ford</h5>
+      <div class="row">
+
+        <div class="col-12">
+          <div class="new-item">
+            <img src="./img/hinh1.png" class="img-fluid">
+            <div class="new-content d-flex new-ford container-fluid">
+              <p>The All-New 2021 F-150 Raptor </p>
+              <p class=" new-icon ml-2"><i class="fa fa-angle-right"></i></p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="new-item">
+              <img src="./img/cq5dam.web.768.768.jpg" class="img-fluid img-special">
+              <div class="new-content d-flex container-fluid">
+                <p>Learn more about Ford Fund </p>
+                <p class="new-icon ml-2"><i class="fa fa-angle-right"></i></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="new-item">
+              <img src="./img/Hình2.png" class="img-fluid">
+              <div class="new-content d-flex container-fluid">
+                <p>Which Fuel Choice is Right For you? </p>
+                <p class="new-icon ml-2"><i class="fa fa-angle-right"></i></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="new-viewmore container-fluid">
+              <p class="new-view" id="view">
+                <a class="new-btn" data-toggle="collapse" href="#newsproduct" role="button" aria-expanded="false"
+                  aria-controls="newsproduct" id="viewmore" onclick=anHienThongTin()>View All <span
+                    class="icon text-white ml-2"><i class="fa fa-plus"></i></span></a>
+              </p>
+              <div class="row">
+                <div class="col-12">
+                  <div class="collapse multi-collapse" id="newsproduct">
+                    <div class="new-item">
+                      <img src="./img/Hình4.png" class="img-fluid img-special">
+                      <div class="new-content d-flex container-fluid">
+                        <p>Learn more</p>
+                        <p class="new-icon ml-2"><i class="fa fa-angle-right"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="collapse multi-collapse" id="newsproduct">
+                      <div class="new-item">
+                        <img src="./img/Hình3.png" class="img-fluid img-special">
+                        <div class="new-content d-flex container-fluid">
+                          <p>Fordpass <sup>TM</sup> Rewards Visa Card</p>
+                          <p class="new-icon ml-2"><i class="fa fa-angle-right"></i></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="collapse multi-collapse" id="newsproduct">
+                    <p class="new-view" id="less">
+                      <a class="new-btn" data-toggle="collapse" href="#newsproduct" role="button" aria-expanded="false"
+                        aria-controls="newsproduct" id="viewless" onclick=anHienThongTin()>View
+                        Less <span class="icon text-white ml-2"><i class="fa fa-minus"></i></span></a>
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+  <!-- Recall -->
+  <section class="recall">
+    <h1>Airbag Recalls</h1>
+    <p>
+      <a href="#" class="btn btn-primary"><span>Learn More</span></a>
+    </p>
+  </section>
+  <!-- Disclosure -->
+  <section class="disclosures">
+    <p class="text">
+      <a data-toggle="collapse" href="#info" role="button" aria-expanded="false" aria-controls="info"
+        onclick=hienAnimation() id="dis-title">
+        disclosures <i class="fa fa-angle-down" id="dis-icon"></i>
+      </a>
+
+    </p>
+    <div class="multi-collapse collapse" id="info">
+      <div class=" disclosures__content">
+        <div class="card card-body">
+          <ul class="dis-body">
+            <li>
+              Note.
+              <p>
+                Information is provided on an "as is" basis and could include technical, typographical or other errors.
+                Ford
+                makes no warranties, representations, or guarantees of any kind, express or implied, including but not
+                limited to, accuracy, currency, or completeness, the operation of the Site, the information, materials,
+                content, availability, and products. Ford reserves the right to change product specifications, pricing
+                and
+                equipment at any time without incurring obligations. Your Ford dealer is the best source of the most
+                up-to-date information on Ford vehicles.
+              </p>
+
+            </li>
+            <li>
+              1.
+              <p>
+                MSRP for base vehicle. Excludes destination/delivery fee plus government fees and taxes, any finance
+                charges, any dealer processing charge, any electronic filing charge, and any emission testing charge.
+                Optional equipment not included. Starting A, Z and X Plan price is for qualified, eligible customers and
+                excludes document fee, destination/delivery charge, taxes, title and registration. Not all vehicles
+                qualify
+                for A, Z or X Plan. All Mustang Shelby GT350® and Shelby® GT350R prices exclude gas guzzler tax.
+              </p>
+
+            </li>
+            <li>
+              2.
+              <p>
+                EPA-estimated city/hwy mpg for the model indicated. See fueleconomy.gov for fuel economy of other
+                engine/transmission combinations. Actual mileage will vary. On plug-in hybrid models and electric
+                models,
+                fuel economy is stated in MPGe. MPGe is the EPA equivalent measure of gasoline fuel efficiency for
+                electric
+                mode operation.
+              </p>
+
+            </li>
+            <li>
+              5.
+              <p>
+                FordPass Connect (optional on select vehicles), the FordPass App; and complimentary Connected Service
+                are
+                required for remote features (see FordPass Terms for details). Connected service and features depend on
+                compatible AT&T network availability. Evolving technology/cellular networks/vehicle capability may limit
+                functionality and prevent operation of connected features. Connected service excludes WiFi hotspot.
+
+              </p>
+
+            </li>
+            <li>
+              6.
+              <p>
+                Special APR offers applied to Estimated Selling Price. Special APR offers require Ford Credit Financing.
+                Not
+                all buyers will qualify. See dealer for qualifications and complete details.
+              </p>
+
+            </li>
+            <li>
+              7.
+              <p>
+                Special Lease offers applied to Estimated Capitalized Cost. Special Lease offers require Ford Credit
+                Financing. Not all buyers will qualify. See dealer for qualifications and complete details.
+              </p>
+
+            </li>
+            <li>
+              8.
+              <p>
+                Price for “as shown” vehicle excludes destination/delivery fee plus government fees and taxes, any
+                finance
+                charges, any dealer processing charge, any electronic filing charge, and any emission testing charge.
+                Does
+                not include A, Z or X Plan price. All Mustang Shelby GT350, Shelby GT350R and Shelby GT500 prices
+                exclude
+                gas guzzler tax
+              </p>
+
+            </li>
+            <li>
+              9.
+              <p>
+                Wi-Fi hotspot includes complimentary wireless data trial that begins upon AT&T activation and expires at
+                the
+                end of 3 months or when 3GB of data is used, whichever comes first, but cannot extend beyond the
+                complimentary subscription period for remote features. To activate, go to www.att.com/ford.
+              </p>
+
+            </li>
+
+            <li>
+              10.
+              <p>
+                Driver-assist features are supplemental and do not replace the driver's attention, judgment and need to
+                control the vehicle. It does not replace safe driving. See Owner's Manual for details and limitations.
+              </p>
+
+
+            </li>
+            <li>
+              11.
+              <p>
+                Connected Navigation:
+                Navigation services require SYNC®4 and FordPass Connect (optional on select vehicles), complimentary
+                connect
+                service and the FordPass app (see FordPass Terms for details). Eligible vehicles receive a complimentary
+                90-day trial of navigation services that begins on the new vehicle warranty start date. Customers must
+                unlock the navigation service trial by activating the eligible vehicle with a FordPass member account.
+                If
+                not subscribed by the end of the complimentary period, the navigation service will terminate.
+              </p>
+
+            </li>
+            <li>
+              12.
+              <p>
+                Connected Built-In Navigation:
+                Navigation services require SYNC®4 and FordPass Connect (optional on select vehicles), complimentary
+                connect
+                service and the FordPass app (see FordPass Terms for details). Eligible vehicles receive a complimentary
+                3-year trial of navigation services that begins on the new vehicle warranty start date. Customers must
+                unlock the navigation service trial by activating the eligible vehicle with a FordPass member account.
+                If
+                not subscribed by the end of the complimentary period, the connected navigation service will terminate,
+                and
+                the system will revert to embedded offline navigation.
+
+              </p>
+
+            </li>
+            <li>
+              15.
+              <p>
+                2020/2021 MY Ford Classes are: Medium Traditional Utility (Bronco); Non-Premium Subcompact Utility
+                (Bronco
+                Sport); Mini Utility (EcoSport); Full-Size Vans (E-Series); Medium Utility (Edge); Non-Premium Compact
+                Utility (Escape); Large Utility (Explorer); Large Traditional Utility (Expedition/EL); Full-Size Pickups
+                under 8,500 lbs. GVWR (F-150); Midsize Sedans (Fusion/Fusion Hybrid); Midsize Plug-in Hybrid Sedans
+                (Fusion
+                Plug-in Hybrid); Class is 6-7 Conventional Chassis Cabs (Medium Duty F-650/750); 300+ HP Sports Cars
+                (Mustang); Midsize Pickups (Ranger); Full-Size Pickups over 8,500 lbs. GVWR (Super Duty® Pickups); Class
+                is
+                3-5 Conventional Chassis Cab (Super Duty Chassis Cabs); Full-Size Vans (Transit); Small Vans (Transit
+                Connect).
+              </p>
+
+            </li>
+            <li>
+              27.
+              <p>
+                Don’t drive while distracted or while using handheld devices. Use voice-operated systems when possible.
+                Some
+                features may be locked out while the vehicle is in gear. Not all features are compatible with all
+                phones.
+              </p>
+
+            </li>
+            <li>
+              28.
+              <p>
+                The vehicle's electrical system (including the battery), the wireless service provider's signal and a
+                connected mobile phone must all be available and operating for 911 Assist to function properly. These
+                systems may become damaged in a crash. The paired mobile phone must be connected to SYNC, and the 911
+                Assist
+                feature enabled, in order for 911 to be dialed. When the feature is ON, 911 Assist uses your paired and
+                connected mobile phone to assist occupants to contact emergency services by dialing 911 if your airbag
+                deploys or, on certain vehicles, if the emergency fuel pump shut-off is activated. Aftermarket on-board
+                diagnostic devices may interfere with various vehicle systems including Vehicle Health Report and 911
+                Assist. To avoid interference, remove the device or contact the device maker for more information on
+                compatibility.
+              </p>
+
+            </li>
+            <li>
+              34.
+              <p>
+                Available Feature. SiriusXM audio and data services each require a subscription sold separately, or as a
+                package, by Sirius XM Radio Inc. If you decide to continue service after your trial, the subscription
+                plan
+                you choose will automatically renew thereafter and you will be charged according to your chosen payment
+                method at then-current rates. Fees and taxes apply. To cancel you must call SiriusXM at 1-866-635-2349.
+                See
+                SiriusXM Customer Agreement for complete terms at www.siriusxm.com. All fees and programming subject to
+                change. Sirius, XM and all related marks and logos are trademarks of Sirius XM Radio Inc.
+              </p>
+
+            </li>
+            <li>
+              39.
+              <p>
+                Remember that even advanced technology cannot overcome the laws of physics. It's always possible to lose
+                control of a vehicle due to inappropriate driver input for the conditions.
+              </p>
+            </li>
+            <li>
+              43.
+              <p>
+                Android is a trademark of Google Inc. iPhone® is a registered trademark of Apple Inc. The BlackBerry and
+                RIM
+                families of related marks, images and symbols are the exclusive properties and trademarks of Research In
+                Motion Limited.
+              </p>
+
+            </li>
+            <li>
+              48.
+              <p>
+                You must have a Bluetooth®-enabled phone paired to your SYNC® system. The Bluetooth word mark is a
+                trademark
+                of the Bluetooth SIG, Inc. HD Radio is a proprietary trademark of iBiquity Digital Corp. iPad®, iPod®,
+                iTunes®, iPhone®, and Siri® are registered trademarks of Apple Inc. The term Wi-Fi® is a registered
+                trademark of the Wi-Fi Alliance®. Optional Navigation System map updates cannot be received via wi-fi
+                and
+                require a separate update. Sony is a registered trademark of the Sony Corporation.
+              </p>
+
+            </li>
+            <li>
+              63.
+              <p>
+                Commands may vary by phone and AppLink software.
+              </p>
+
+            </li>
+            <li>
+              68.
+              <p>
+                Horsepower and torque ratings based on premium fuel per SAE J1349® standard. Your results may vary.
+              </p>
+
+            </li>
+            <li>
+              161.
+              <p>
+                Requires phone with active data service and compatible software. SYNC 3 does not control 3rd party
+                products
+                while in use. 3rd Parties are solely responsible for their respective functionality.
+              </p>
+
+            </li>
+            <li>
+              164.
+              <p>
+                FordPass, compatible with select smartphone platforms, is available via a download. Message and data
+                rates
+                may apply.
+              </p>
+
+            </li>
+            <li>
+              166.
+              <p>
+                Roadside assistance is included for certain owners and available to everyone for a per-service fee. Ford
+                reserves the right to change program details without obligations.
+              </p>
+            </li>
+            <li>
+              167.
+              <p>
+                Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App
+                Store
+                is a service mark of Apple Inc. Android, Google Play and the Google Play logo are trademarks of Google
+                Inc.
+              </p>
+
+            </li>
+            <li>
+              169.
+              <p>
+                FordPass Park is available in select cities.
+              </p>
+
+            </li>
+            <li>
+              172.
+              <p>
+                Closed track. Line-lock is intended for track use only. It should not be used on public roads. See
+                Owner’s
+                Manual for information on use.
+              </p>
+
+            </li>
+            <li>
+              176.
+              <p>
+                You may qualify for as much as $7,500 in federal tax incentives for purchasing an all-electric Ford
+                vehicle
+                in 2020. The federal tax credit is a potential future tax savings. The amount of your tax savings will
+                depend on your individual tax circumstances. For additional information, go to
+                https://www.afdc.energy.gov/laws/409. Please consult your tax professional to determine eligibility and
+                amount of your incentive. Tax incentives are not within Ford’s control and this information does not
+                constitute tax advice.
+              </p>
+
+            </li>
+            <li>
+              177.
+              <p>
+                Reservation does not guarantee vehicle delivery nor priority for ordering a vehicle. See Reservation
+                Terms
+                and Conditions for important details.
+
+              </p>
+
+            </li>
+            <li>
+              178.
+              <p>
+                Range and charge time based on manufacturer computer engineering simulations and EPA-estimated range
+                calculation methodology. The charging rate decreases as battery reaches full capacity. Your results may
+                vary
+                based on peak charging times and battery state of charge. Actual vehicle range varies with conditions
+                such
+                as external elements, driving behaviors, vehicle maintenance, and lithium-ion battery age.
+              </p>
+
+
+            </li>
+            <li>
+              180.
+              <p>
+                Effectiveness of cabin conditioning may be reduced by extreme outside temperatures.
+              </p>
+
+            </li>
+            <li>
+              181.
+              <p>
+                Based on manufacturer calculation using computer engineering simulations. Your results may vary.
+              </p>
+
+            </li>
+            <li>
+              182.
+              <p>
+                Estimated Average additional range. Range and charge time based on manufacturer computer engineering
+                simulations and EPA-estimated range calculation methodology. The charging rate decreases as battery
+                reaches
+                full capacity. Your results may vary based on peak charging times and battery state of charge. Actual
+                vehicle range varies with conditions such as external elements, driving behaviors, vehicle maintenance,
+                and
+                lithium-ion battery age. Stat achieved with extended-range battery and rear-wheel drive on a 150 kW
+                Direct
+                Current fast charge charger.
+              </p>
+
+            </li>
+            <li>
+              183.
+              <p>
+                Price the dealer is willing to sell the vehicle for in a purchase transaction and corresponds to the
+                estimated dealer selling price for the vehicle displayed in the Pricing Summary. Excludes available
+                incentives (including AXZD-Plans Pricing for qualified customers), governmental taxes and fees, title or
+                registration fees. All current available incentives (including AXZD-Plans Pricing), taxes and fees will
+                be
+                applied at purchase. See dealer for details, residency restrictions may apply.
+              </p>
+
+
+            </li>
+            <li>
+              184.
+              <p>
+                Incentives are available at the time of posting, determined by zip code entered by the consumer, and
+                subject
+                to change and expiration. Not all incentives can be redeemed together. Restrictions may apply. See your
+                dealer for further details.
+
+              </p>
+
+            </li>
+            <li>
+              185.
+              <p>
+                This is the deposit your Dealer will receive to process your order. Your Dealer Deposit will be applied
+                towards the purchase price of the Vehicle. By paying a Dealer Deposit, you are agreeing to the Dealer’s
+                selling price for your selected vehicle. Dealer Deposit refund policy may vary based on your selected
+                Dealer. Please ask your Dealer for their refund policy before you place your order.
+              </p>
+
+
+            </li>
+            <li>
+              186.
+              <p>
+                Term: The number of scheduled months in your Purchase/Lease contract. If your Purchase/Lease the
+                vehicle,
+                the term represents the number of months you agree to pay off the contract obligation with your
+                scheduled
+                payments.
+              </p>
+
+            </li>
+            <li>
+              187.
+              <p>
+                Annual Mileage: The miles per year that you expect to drive should match the mileage allowance you
+                select
+                for your lease. The mileage allowance you select will impact the monthly lease payment and the terms of
+                repayment. You will be responsible for a per-mile excess mileage charge over the mileage allowance in
+                your
+                lease (see footnote 10 Estimated Monthly Payment for excess mileage charges).
+              </p>
+
+            </li>
+            <li>
+              189.
+              <p>
+                Charges associated with getting the vehicle from the manufacturer to the dealership.
+              </p>
+
+            </li>
+            <li>
+              190.
+              <p>
+                Down Payment: The cash amount paid to reduce the Dealer Selling Price of the vehicle being purchased or
+                leased.
+              </p>
+
+            </li>
+            <li>
+              191.
+              <p>
+                The Option Package price and monthly payment displayed is for illustration purposes, only. Prices and
+                monthly payments may vary based on features included in package, financing terms and availability. Some
+                Options are not available separately. Not all Options or Option Packages are available on all vehicles.
+                See
+                your local dealer for details.
+
+              </p>
+
+            </li>
+            <li>
+              192.
+              <p>
+                Total MSRP is Base MSRP plus options, destination and delivery charges. Excludes taxes, title, and
+                registration fees.
+              </p>
+
+
+            </li>
+            <li>
+              193.
+              <p>
+                Destination Charges are associated with getting the vehicle from the manufacturer to the dealership.
+                Prices
+                listed are MSRP and are based on information updated on this website from time to time.
+              </p>
+
+            </li>
+            <li>
+              194.
+              <p>
+                Reservation does not guarantee vehicle delivery nor priority for ordering a vehicle. See Reservation
+                Terms
+                and Conditions for important details.
+              </p>
+
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="residents">
+    <h1>California Residents</h1>
+    <p>Exercise your rights under the California Consumer Privacy Act <a href="#">here</a> .</p>
+    <h2>
+      <a href="#" class="btn btn-primary"><span>Do Not Sell My Personal Information</span></a>
+    </h2>
+  </section>
+  <!-- company -->
+  <section class="search px-5 py-4">
+    <div class="search__left">
+      <i class="fa fa-search"></i>
+      <span>Search</span>
+    </div>
+    <div class="search__right">
+
+      <a href="#" class="popular">Popular</a>
+      <a href="#">Electric Vehicles</a>
+      <a href="#">Ranger</a>
+      <a href="#">Explorer</a>
+
+    </div>
+  </section>
+
+  <section class="company px-5 pt-5">
+    <div class="company__large-window">
+      <div class="col-2dot4">
+        <p>All Vehicles</p>
+        <ul>
+          <li><a href="#">SUVs & Crossovers</a></li>
+          <li><a href="#"> Trucks & Vans</a></li>
+          <li><a href="#"> Cars</a></li>
+          <li><a href="#">Electrified</a></li>
+          <li><a href="#">Commercial Vehicles</a></li>
+          <li><a href="#">Future Vehicles</a></li>
+          <li><a href="#">Ford Used Vehicles</a></li>
+          <li><a href="#">Fleet Vehicles</a></li>
+          <li><a href="#">All Vehicles</a></li>
+          <li><a href="#"> Performance Vehicles</a></li>
+        </ul>
+      </div>
+      <div class="col-2dot4">
+        <p>Shopping Tools</p>
+        <ul>
+          <li><a href="#">Build & Price</a></li>
+          <li><a href="#">Search Inventory</a></li>
+          <li><a href="#">Get a Quote</a></li>
+          <li><a href="#">Pricing & Incentives</a></li>
+          <li><a href="#">Trade-In Value</a></li>
+          <li><a href="#">Get a Brochure</a></li>
+          <li><a href="#">Compare Vehicles</a></li>
+          <li><a href="#">Get Updates</a></li>
+        </ul>
+      </div>
+      <div class="col-2dot4">
+        <p> Finance</p>
+        <ul>
+          <li><a href="#">Why Ford Credit</a></li>
+          <li><a href="#">Finance Options</a></li>
+          <li><a href="#">Payment Calculator</a></li>
+          <li><a href="#">Credit Education</a></li>
+          <li><a href="#">Customer Support</a></li>
+          <li><a href="#">Ford Promise</a></li>
+          <li><a href="#">Apply Online</a></li>
+          <li><a href="#">Ford Credit Account</a></li>
+          <li><a href="#">Ford Insure</a></li>
+          <li><a href="#">Ford Interest Advantage</a></li>
+          <li><a href="#">Investor Center</a></li>
+        </ul>
+      </div>
+      <div class="col-2dot4">
+        <p> Owner </p>
+        <ul>
+          <li><a href="#">Owner Home</a></li>
+          <li><a href="#">Schedule Service</a></li>
+          <li><a href="#">Your Warranty</a></li>
+          <li><a href="#">Service Coupons & Offers</a></li>
+          <li><a href="#">Redeem & Rebate</a></li>
+          <li><a href="#">SYNC & Technology</a></li>
+          <li><a href="#">SYNC Software Updates</a></li>
+          <li><a href="#">Owner Manuals</a></li>
+          <li><a href="#">Locate a Dealer</a></li>
+          <li><a href="#">Ford Parts</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Roadside Assistance</a></li>
+          <li><a href="#">Ford Protect</a></li>
+          <li><a href="#">Safety Recalls</a></li>
+          <li><a href="#">Airbag Recalls</a></li>
+          <li><a href="#">Ask Ford</a></li>
+        </ul>
+      </div>
+      <div class="col-2dot4">
+        <p> Experience Ford </p>
+        <ul>
+          <li><a href="#"> Corporate</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Investors</a></li>
+          <li><a href="#">Company News</a></li>
+          <li><a href="#">About Ford</a></li>
+          <li><a href="#">Racing</a></li>
+          <li><a href="#">Accessories Store</a></li>
+          <li><a href="#">Warriors in Pink</a></li>
+          <li><a href="#">Ford Merchandise</a></li>
+          <li><a href="#">Ford Motor Company Fund</a></li>
+          <li><a href="#">SYNC</a></li>
+          <li><a href="#">FordPass</a></li>
+          <li><a href="#">Ford Co-Pilot360 Technology</a></li>
+          <li><a href="#">Ford Telematics</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="company__medium-window">
+      <div class="medium-left">
+        <div class="medium-left__left">
+          <p>All Vehicles</p>
+
+          <ul>
+            <li><a href="#">SUVs & Crossovers</a></li>
+          <li><a href="#"> Trucks & Vans</a></li>
+          <li><a href="#"> Cars</a></li>
+          <li><a href="#">Electrified</a></li>
+          <li><a href="#">Commercial Vehicles</a></li>
+          <li><a href="#">Future Vehicles</a></li>
+          <li><a href="#">Ford Used Vehicles</a></li>
+          <li><a href="#">Fleet Vehicles</a></li>
+          <li><a href="#">All Vehicles</a></li>
+          <li><a href="#"> Performance Vehicles</a></li>
+          </ul>
+
+        </div>
+        <div class="medium-left__right">
+          <p>Shopping Tools</p>
+
+          <ul>
+            <li><a href="#">Build & Price</a></li>
+          <li><a href="#">Search Inventory</a></li>
+          <li><a href="#">Get a Quote</a></li>
+          <li><a href="#">Pricing & Incentives</a></li>
+          <li><a href="#">Trade-In Value</a></li>
+          <li><a href="#">Get a Brochure</a></li>
+          <li><a href="#">Compare Vehicles</a></li>
+          <li><a href="#">Get Updates</a></li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="medium-right">
+
+
+        <div class="accordion" id="myaccordion">
+
+          <div class="medium-right__content">
+
+            <div data-toggle="collapse" data-target="#finance" aria-expanded="true" data-parent="#myaccordion" class="company-collapse">
+              <p>Finance</p>
+              <p><i class="fa fa-angle-down"></i></p>
+            </div>
+
+            <div class="collapse" data-toggle="collapse" aria-expanded="false" id="finance">
+              <ul>
+
+                <li><a href="#">Why Ford Credit</a></li>
+                <li><a href="#">Finance Options</a></li>
+                <li><a href="#">Payment Calculator</a></li>
+                <li><a href="#">Credit Education</a></li>
+                <li><a href="#">Customer Support</a></li>
+                <li><a href="#">Ford Promise</a></li>
+                <li><a href="#">Apply Online</a></li>
+                <li><a href="#">Ford Credit Account</a></li>
+                <li><a href="#">Ford Insure</a></li>
+                <li><a href="#">Ford Interest Advantage</a></li>
+                <li><a href="#">Investor Center</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="medium-right__content">
+            <div data-toggle="collapse" data-target="#owner" aria-expanded="true" data-parent="#myaccordion" class="company-collapse">
+              <p>Owner</p>
+              <p><i class="fa fa-angle-down"></i></p>
+            </div>
+            <div class="collapse" data-toggle="collapse" aria-expanded="false" id="owner">
+              <ul>
+                <li><a href="#">Owner Home</a></li>
+                <li><a href="#">Schedule Service</a></li>
+                <li><a href="#">Your Warranty</a></li>
+                <li><a href="#">Service Coupons & Offers</a></li>
+                <li><a href="#">Redeem & Rebate</a></li>
+                <li><a href="#">SYNC & Technology</a></li>
+                <li><a href="#">SYNC Software Updates</a></li>
+                <li><a href="#">Owner Manuals</a></li>
+                <li><a href="#">Locate a Dealer</a></li>
+                <li><a href="#">Ford Parts</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Roadside Assistance</a></li>
+                <li><a href="#">Ford Protect</a></li>
+                <li><a href="#">Safety Recalls</a></li>
+                <li><a href="#">Airbag Recalls</a></li>
+                <li><a href="#">Ask Ford</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="medium-right__content">
+            <div data-toggle="collapse" data-target="#experience" aria-expanded="true" data-parent="#myaccordion" class="company-collapse">
+              <p>Experience Ford</p>
+              <p><i class="fa fa-angle-down"></i></p>
+            </div>
+            <div class="collapse" data-toggle="collapse" aria-expanded="false" id="experience">
+              <ul>
+                <li><a href="#"> Corporate</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Investors</a></li>
+                <li><a href="#">Company News</a></li>
+                <li><a href="#">About Ford</a></li>
+                <li><a href="#">Racing</a></li>
+                <li><a href="#">Accessories Store</a></li>
+                <li><a href="#">Warriors in Pink</a></li>
+                <li><a href="#">Ford Merchandise</a></li>
+                <li><a href="#">Ford Motor Company Fund</a></li>
+                <li><a href="#">SYNC</a></li>
+                <li><a href="#">FordPass</a></li>
+                <li><a href="#">Ford Co-Pilot360 Technology</a></li>
+                <li><a href="#">Ford Telematics</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+      <div class="company__small-window">
+
+        <div class="sw">
+          <p>All Vehicles</p>
+          <ul>
+            <li><a href="#">SUVs & Crossovers</a></li>
+            <li><a href="#"> Trucks & Vans</a></li>
+            <li><a href="#"> Cars</a></li>
+            <li><a href="#">Electrified</a></li>
+            <li><a href="#">Commercial Vehicles</a></li>
+            <li><a href="#">Future Vehicles</a></li>
+            <li><a href="#">Ford Used Vehicles</a></li>
+            <li><a href="#">Fleet Vehicles</a></li>
+            <li><a href="#">All Vehicles</a></li>
+            <li><a href="#"> Performance Vehicles</a></li>
+          </ul>
+        </div>
+        <div class="accordion" id="myaccordion">
+
+          <div class="sw__content">
+            <div data-toggle="collapse" data-target="#shoping" aria-expanded="false" data-parent="#myaccordion">
+              <p>Shopping Tools</p>
+            </div>
+            <div class="collapse" data-toggle="collapse" aria-expanded="false" id="shoping">
+              <ul>
+                <li><a href="#">Build & Price</a></li>
+                <li><a href="#">Search Inventory</a></li>
+                <li><a href="#">Get a Quote</a></li>
+                <li><a href="#">Pricing & Incentives</a></li>
+                <li><a href="#">Trade-In Value</a></li>
+                <li><a href="#">Get a Brochure</a></li>
+                <li><a href="#">Compare Vehicles</a></li>
+                <li><a href="#">Get Updates</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="sw__content">
+            <div data-toggle="collapse" data-target="#finance" aria-expanded="false" data-parent="#myaccordion">
+              <p>Finance</p>
+            </div>
+            <div class="collapse" data-toggle="collapse" aria-expanded="false" id="finance">
+              <ul>
+                <li><a href="#">Why Ford Credit</a></li>
+                <li><a href="#">Finance Options</a></li>
+                <li><a href="#">Payment Calculator</a></li>
+                <li><a href="#">Credit Education</a></li>
+                <li><a href="#">Customer Support</a></li>
+                <li><a href="#">Ford Promise</a></li>
+                <li><a href="#">Apply Online</a></li>
+                <li><a href="#">Ford Credit Account</a></li>
+                <li><a href="#">Ford Insure</a></li>
+                <li><a href="#">Ford Interest Advantage</a></li>
+                <li><a href="#">Investor Center</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="sw__content">
+            <div data-toggle="collapse" data-target="#owner" aria-expanded="false" data-parent="#myaccordion">
+              <p>Owner</p>
+            </div>
+            <div class="collapse" data-toggle="collapse" aria-expanded="false" id="owner">
+              <ul>
+                <li><a href="#">Owner Home</a></li>
+                <li><a href="#">Schedule Service</a></li>
+                <li><a href="#">Your Warranty</a></li>
+                <li><a href="#">Service Coupons & Offers</a></li>
+                <li><a href="#">Redeem & Rebate</a></li>
+                <li><a href="#">SYNC & Technology</a></li>
+                <li><a href="#">SYNC Software Updates</a></li>
+                <li><a href="#">Owner Manuals</a></li>
+                <li><a href="#">Locate a Dealer</a></li>
+                <li><a href="#">Ford Parts</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Roadside Assistance</a></li>
+                <li><a href="#">Ford Protect</a></li>
+                <li><a href="#">Safety Recalls</a></li>
+                <li><a href="#">Airbag Recalls</a></li>
+                <li><a href="#">Ask Ford</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="sw__content">
+            <div data-toggle="collapse" data-target="#experience" aria-expanded="false" data-parent="#myaccordion">
+              <p>Experience Ford</p>
+            </div>
+            <div class="collapse" data-toggle="collapse" aria-expanded="false" id="experience">
+              <ul>
+                <li><a href="#"> Corporate</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Investors</a></li>
+                <li><a href="#">Company News</a></li>
+                <li><a href="#">About Ford</a></li>
+                <li><a href="#">Racing</a></li>
+                <li><a href="#">Accessories Store</a></li>
+                <li><a href="#">Warriors in Pink</a></li>
+                <li><a href="#">Ford Merchandise</a></li>
+                <li><a href="#">Ford Motor Company Fund</a></li>
+                <li><a href="#">SYNC</a></li>
+                <li><a href="#">FordPass</a></li>
+                <li><a href="#">Ford Co-Pilot360 Technology</a></li>
+                <li><a href="#">Ford Telematics</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </section>
+  <!-- Footer -->
+  <section class="update px-5 py-5">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-3 col-lg-2">
+          <a href="#"><i class="fa fa-envelope mr-1"></i> Get update</a>
+        </div>
+        <div class="col-12 col-md-3 col-lg-5 update__hidden">
+          <a href="#"><i class="fa fa-list-alt mr-1"></i> Share your thoughts about Ford.com</a>
+        </div>
+        <div class="col-12 col-md-3 col-lg-2">
+
+        </div>
+        <div class="col-12 col-md-3 col-lg-3">
+          <div class="d-xl-flex">
+            <p class="mr-1 update-title">Follow Ford</p>
+            <p>
+              <i class="fab fa-facebook-f mr-1"></i>
+            <i class="fab fa-twitter mr-1"></i>
+            <i class="fab fa-youtube mr-1"></i>
+            <i class="fab fa-instagram mr-1"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer__top px-5 pt-4">
+      <p><i class="fa fa-globe-asia pr-3"></i> <a href="#"> Change Language</a> </p>
+      <div class="footer__logo">
+        <a class="logo-hidden" href="#">
+          <img src="./img/Ford-Logo.png">
+        </a>
+      </div>
+    </div>
+    <div class="footer__middle px-5">
+      <i class="fa fa-copyright"></i>
+      <span>2021 Ford Motor Company</span>
+    </div>
+    <div class="footer__bottom px-5">
+      <a href="#">Site Map</a>
+      <a href="#"> Glossary</a>
+      <a href="#">Site Feedback</a>
+      <a href="#">Contact Us</a>
+      <a href="#"> Accessibility</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#"> Privacy</a>
+      <a href="#">Cookie Settings</a>
+      <a href="#">Your CA Privacy Rights</a>
+      <a href="#">AdChoices</a>
+      <a href="#"> Third-Party Trademarks</a>
+    </div>
+    <div class="footer__hidden px-5">
+      <div class="footer__logo2">
+        <a class="logo-hidden2" href="#">
+          <img src="./img/Ford-Logo.png">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <!-- Back to top -->
+  <a href="#" class="scrollToTop">
+    <i class="fa fa-angle-up"></i>
+  </a>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <script>
+    function hienThiThongTin() {
+      var x = document.getElementById("navbarDropdown");
+      var vehicle = document.getElementById("vehicle");
+      var animation = document.getElementById("nav-icon");
+      var y = x.getAttribute('aria-expanded');
+      if (y == "false") {
+        x.style.background = "#2861A4";
+        vehicle.style.color = "white";
+        animation.style.color = "#ffffff";
+        animation.style.transform = "rotate(180deg)"
+      }else {
+        x.style.background = "white";
+        vehicle.style.color = "#0276B3";
+        animation.style.color = "#2861A4";
+        animation.style.transform = "rotate(0deg)"
+      }
+    }
+
+    function anHienThongTin() {
+      var viewMore = document.getElementById("viewmore");
+      var layNutView = document.getElementById("view");
+      var layNutLess = document.getElementById("less");
+      var viewLess = document.getElementById("viewless");
+      var x = viewLess.getAttribute('aria-expanded');
+      var y = viewMore.getAttribute('aria-expanded');
+      if (y == "false") {
+        layNutView.style.display = "none";
+        layNutLess.style.display = "block";
+
+      }
+      if (x == "true") {
+        layNutView.style.display = "block";
+        layNutLess.style.display = "none";
+
+      }
+    }
+
+    function hienAnimation() {
+      var nutQuay = document.getElementById("dis-icon");
+      var layTieuDe = document.getElementById("dis-title");
+      var layThuocTinh = layTieuDe.getAttribute('aria-expanded');
+      if (layThuocTinh == "true") {
+        nutQuay.style.transform = "rotate(0deg)";
+      } else {
+        nutQuay.style.transform = "rotate(180deg)";
+      }
+    }
+
+
+  </script>
+  <script>
+    $(document).ready(function () {
+
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $('.scrollToTop').fadeIn();
+        } else {
+          $('.scrollToTop').fadeOut();
+        }
+      });
+
+      $('.scrollToTop').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 800);
+        return false;
+      });
+
+    });
+  </script>
+
+
+</body>
+
+
+</html>
